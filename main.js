@@ -35,10 +35,8 @@ const allCars = [
 
 const outputElement = document.querySelector("#app")
 
-// Iterate the array of cars. Individual objects stored in `car`.
 allCars.forEach(car => {
 
-    // Iterate all of the values of the current car
     for (const value of Object.values(car)) {
         outputElement.innerHTML += `<div>${value}</div>`
     }
@@ -68,25 +66,18 @@ const patient = "patientName"
 // console.log(doctorsBill[owed])
 // console.log(doctorsBill[patient])
 // console.log(Object.values(doctorsBill))
-//Use square bracket notation to output the value of 
-//those three properties to the console in Chrome.
-
-//Just get a reference to the first object since
-//they all have the same properties
-
 const firstCar = allCars[0]
 
-// Now iterate its keys
+
 outputElement.innerHTML += "<h1>Properties</h1>"
 for (const key of Object.keys(allCars[0])) {
     outputElement.innerHTML += `<div>${key}</div>`
 }
 
-// Iterate the array of cars. Individual objects stored in `car`.
+
 outputElement.innerHTML += "<h1>Car List</h1>"
 allCars.forEach(car => {
 
-    // Iterate all of the values of the current car
     for (const value of Object.values(car)) {
         outputElement.innerHTML += `<div>${value}</div>`
     }
